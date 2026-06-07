@@ -70,4 +70,10 @@ public class TarefaController {
 
         return tarefaService.atualizar(id, tarefa);
     }
+
+    // Busca tarefas de acordo com o status informado.
+    @GetMapping("/status/{status}")
+    public List<Tarefa> buscarPorStatus(@PathVariable String status) {
+        return tarefaService.buscarPorStatus(status);
+    }
 }

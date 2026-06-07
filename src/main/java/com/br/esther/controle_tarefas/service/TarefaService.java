@@ -47,4 +47,9 @@ public class TarefaService {
 
         return tarefaRepository.save(tarefaExistente);
     }
+
+    // Busca todas as tarefas com o status informado.
+    public List<Tarefa> buscarPorStatus(String status) {
+        return tarefaRepository.findByStatus(status);
+    }
 }
