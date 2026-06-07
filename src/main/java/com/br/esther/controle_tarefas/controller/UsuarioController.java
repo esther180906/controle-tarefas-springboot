@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-// Controller responsável por receber as requisições relacionadas aos usuários
-// e encaminhá-las para a camada de serviço.
-
 @Tag(name = "Usuários", description = "Endpoints para gerenciamento de usuários")
 @RestController
 @RequestMapping("/usuarios")
@@ -24,7 +21,7 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
-    @Operation(summary = "Cadastrar usuário", description = "Cria um novo usuário.")
+    @Operation(summary = "Cadastrar usuário", description = "Cria um novo usuário no sistema.")
     @PostMapping
     public Usuario salvar(@RequestBody @Valid UsuarioDTO usuarioDTO) {
         Usuario usuario = new Usuario();
