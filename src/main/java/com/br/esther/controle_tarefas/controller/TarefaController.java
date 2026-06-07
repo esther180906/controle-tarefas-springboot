@@ -11,6 +11,9 @@ import java.util.List;
 
 // Controller responsável por receber as requisições relacionadas às tarefas
 // e encaminhá-las para a camada de serviço.
+@Tag(name = "Tarefas", description = "Endpoints para gerenciamento de tarefas")
+
+
 @RestController
 @RequestMapping("/tarefas")
 public class TarefaController {
