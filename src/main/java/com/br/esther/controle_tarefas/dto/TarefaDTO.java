@@ -35,4 +35,20 @@ public class TarefaDTO {
     public Long getUsuarioId() {
         return usuarioId;
     }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setUsuarioId(Long usuarioId) {
+        this.usuarioId = usuarioId;
+    }
 }
