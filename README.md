@@ -296,7 +296,7 @@ https://controle-tarefas-springboot-production.up.railway.app/swagger-ui/index.h
 
 ### Gabriel
 - Apoio na validação do projeto
-- Testes e revisão final da aplicação
+- Testes e revisão final da aplicacao
 
 ## Status do Projeto
 
