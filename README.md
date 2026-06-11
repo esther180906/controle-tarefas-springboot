@@ -15,16 +15,18 @@ Desenvolver uma aplicação utilizando Spring Boot aplicando conceitos de:
 - Arquitetura em camadas
 - API REST
 - JPA/Hibernate
-- Testes unitários
-- Tratamento de exceções
+- DTOs e Validações
+- Testes Unitários
+- Tratamento de Exceções
 - Documentação de APIs com Swagger/OpenAPI
+- Deploy em Produção
 
 ---
 
 ## Tecnologias Utilizadas
 
 - Java 21
-- Spring Boot
+- Spring Boot 3
 - Spring Data JPA
 - Hibernate
 - H2 Database
@@ -34,6 +36,8 @@ Desenvolver uma aplicação utilizando Spring Boot aplicando conceitos de:
 - JUnit 5
 - Mockito
 - JaCoCo
+- Railway
+- Supabase
 
 ---
 
@@ -74,6 +78,7 @@ src
 ### Recursos adicionais
 
 - Relacionamento entre Usuários e Tarefas
+- DTOs com validação
 - Tratamento global de exceções
 - Documentação Swagger
 - Testes unitários
@@ -167,10 +172,16 @@ http://localhost:8080
 
 ## Swagger
 
-Após iniciar a aplicação:
+### Ambiente Local
 
 ```text
 http://localhost:8080/swagger-ui/index.html
+```
+
+### Ambiente de Produção
+
+```text
+https://controle-tarefas-springboot-production.up.railway.app/swagger-ui/index.html
 ```
 
 A documentação apresenta todos os endpoints organizados por:
@@ -188,7 +199,7 @@ Banco H2 em memória.
 
 ### Produção
 
-Preparado para utilização com PostgreSQL.
+Banco PostgreSQL hospedado no Supabase.
 
 ---
 
@@ -204,11 +215,40 @@ Cobertura de testes monitorada com:
 
 - JaCoCo
 
-Cobertura atual aproximada:
+Cobertura atual:
 
 ```text
 96%
 ```
+
+---
+
+## Deploy em Produção
+
+Aplicação publicada na plataforma Railway.
+
+### URL da aplicação
+
+```text
+https://controle-tarefas-springboot-production.up.railway.app
+```
+
+### Swagger Online
+
+```text
+https://controle-tarefas-springboot-production.up.railway.app/swagger-ui/index.html
+```
+
+### Banco de Dados
+
+- PostgreSQL (Supabase)
+
+### Variáveis de Ambiente
+
+- SPRING_PROFILES_ACTIVE
+- DB_URL
+- DB_USERNAME
+- DB_PASSWORD
 
 ---
 
@@ -223,17 +263,40 @@ Cobertura atual aproximada:
 
 ---
 
-## Deploy em Produção
+## Divisão de Tarefas
 
-A aplicação pode ser publicada em plataformas como:
+### Esther Santos
+- Estruturação inicial do projeto Spring Boot
+- Implementação das camadas Controller, Service e Repository
+- Desenvolvimento dos DTOs e validações
+- Implementação do tratamento global de exceções
+- Criação e manutenção dos testes unitários
+- Configuração do JaCoCo e análise de cobertura
+- Integração final do projeto
+- Configuração e validação do deploy
 
-- Render
-- Railway
-- Heroku
+### João Nelson
+- Documentação Swagger/OpenAPI
+- Documentação dos endpoints da API
+- Atualização e organização do README
 
-Utilizando PostgreSQL como banco de dados principal.
+### Henrique
+- Configuração do PostgreSQL para produção
+- Criação e configuração dos profiles do Spring Boot
+- Configuração das variáveis de ambiente
+- Integração com banco de dados de produção
 
----
+### Kaike Machado
+- Apoio no desenvolvimento e validação das funcionalidades
+- Testes e revisão da aplicação
+
+### Duda Gobira
+- Apoio na documentação e validação das funcionalidades
+- Testes da aplicação
+
+### Gabriel
+- Apoio na validação do projeto
+- Testes e revisão final da aplicação
 
 ## Status do Projeto
 
@@ -241,18 +304,20 @@ Utilizando PostgreSQL como banco de dados principal.
 
 ✅ CRUD de Tarefas
 
-✅ Relacionamento entre entidades
+✅ Relacionamento entre Entidades
+
+✅ DTOs e Validações
 
 ✅ Swagger/OpenAPI
 
 ✅ Testes Unitários
 
-✅ JaCoCo
+✅ JaCoCo (96%)
 
-✅ Tratamento de Exceções
+✅ Tratamento Global de Exceções
 
-✅ GitHub atualizado
+✅ PostgreSQL
 
-🚧 Deploy em produção (opcional)
+✅ Deploy em Produção
 
-🚧 Configuração de perfil de produção (opcional)
+✅ GitHub Atualizado
