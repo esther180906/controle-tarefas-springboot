@@ -280,7 +280,7 @@ https://controle-tarefas-springboot-production.up.railway.app/swagger-ui/index.h
 - Documentação dos endpoints da API
 - Atualização e organização do README
 
-### Henrique
+### Henrique Silva e Gabriel Dos Anjos
 - Configuração do PostgreSQL para produção
 - Criação e configuração dos profiles do Spring Boot
 - Configuração das variáveis de ambiente
@@ -290,13 +290,9 @@ https://controle-tarefas-springboot-production.up.railway.app/swagger-ui/index.h
 - Apoio no desenvolvimento e validação das funcionalidades
 - Testes e revisão da aplicação
 
-### Duda Gobira
+### Maria Eduarda Gobira
 - Apoio na documentação e validação das funcionalidades
 - Testes da aplicação
-
-### Gabriel
-- Apoio na validação do projeto
-- Testes e revisão final da aplicacao
 
 ## Status do Projeto
 
